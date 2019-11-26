@@ -18,27 +18,7 @@
     }
   ],
   "vim.leader": ",",
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "j"
-      ],
-      "after": [
-        "j",
-        "z",
-        "z"
-      ]
-    },
-    {
-      "before": [
-        "k"
-      ],
-      "after": [
-        "k",
-        "z",
-        "z"
-      ]
-    },
+  "vim.visualModeKeyBindingsNonRecursive": [ 
     {
       "before": [
         ">"
@@ -97,6 +77,26 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "j"
+      ],
+      "after": [
+        "j",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "k",
+        "z",
+        "z"
+      ]
+    },
     {
       "before": [
         ">"
@@ -373,4 +373,5 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "java.configuration.checkProjectSettingsExclusions": false,
+  "git.ignoreMissingGitWarning": true,
 }

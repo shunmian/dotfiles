@@ -17,6 +17,13 @@ function cd {
 }
 
 # git alias
+if [ -d "$ZSH_CUSTOM/plugins/git-open" ]; then
+  echo "git open plugin installed"
+else
+  echo "git open plugin does not exist, start install"
+  git clone https://github.com/paulirish/git-open.git $ZSH_CUSTOM/plugins/git-open
+  echo "git open install succeeded"
+fi
 alias gac="git add . && git commit -m"
 alias glg="git lg2"
 alias glg2="git lg1"

@@ -9,7 +9,7 @@
   "vim.insertModeKeyBindings": [
     {
       "before": [
-        "k",
+        "j",
         "j"
       ],
       "after": [
@@ -19,26 +19,7 @@
   ],
   "vim.leader": ",",
   "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "j"
-      ],
-      "after": [
-        "j",
-        "z",
-        "z"
-      ]
-    },
-    {
-      "before": [
-        "k"
-      ],
-      "after": [
-        "k",
-        "z",
-        "z"
-      ]
-    },
+
     {
       "before": [
         ">"
@@ -97,6 +78,26 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "j"
+      ],
+      "after": [
+        "j",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "k",
+        "z",
+        "z"
+      ]
+    },
     {
       "before": [
         ">"
@@ -347,7 +348,7 @@
   },
   "search.useGlobalIgnoreFiles": true,
   "search.location": "panel",
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 0,
   "eslint.autoFixOnSave": true,
   "files.autoSave": "afterDelay",
   "workbench.colorTheme": "Dracula",
@@ -368,5 +369,6 @@
   "editor.minimap.enabled": true,
   "editor.lineNumbers": "relative",
   "terminal.integrated.fontFamily": "Source Code Pro",
-  "terminal.integrated.fontSize": 10
+  "terminal.integrated.fontSize": 10,
+  "git.ignoreMissingGitWarning": true
 }

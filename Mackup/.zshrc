@@ -15,6 +15,12 @@ alias ls='ls -lGFh'
 function cd {
     builtin cd "$@" && ls -F
 }
+#function MCInitVimLocally {
+#  source $MYCONFIG_VIM_INIT
+#j  ls $LOCALCONFIG_VIM
+#  ls $LOCALCONFIG_VIM_BASIC
+#}
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

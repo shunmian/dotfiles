@@ -44,4 +44,4 @@ highlight SpecialKey ctermfg=240 guifg=#585858
 
 noremap j jzz
 noremap k kzz
-inoremap js <Esc>  
+inoremap js <Esc>

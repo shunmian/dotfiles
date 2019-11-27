@@ -34,6 +34,8 @@ alias gb="git branch"
 alias gs="git status"
 alias gf="git fetch"
 alias gc="git co"
+alias gd="git diff"
+alias grh="git reset --hard"
 alias gcb="git co -b"
 
 

@@ -23,6 +23,7 @@ else
 
 fi
 alias gac="git add . && git commit -m"
+alias gaca="git add . && git commit --amend"
 alias glg="git lg2"
 alias glg2="git lg1"
 alias gpush="git push"

@@ -101,7 +101,7 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "1"
+                                    "key_code": "f1"
                                 },
                                 "to": [
                                     {
@@ -264,7 +264,7 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "1"
+                                    "key_code": "f1"
                                 },
                                 "to": [
                                     {

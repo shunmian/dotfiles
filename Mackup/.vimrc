@@ -4,10 +4,26 @@ filetype off                     " detect type of file
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'junegunn/fzf'
+Plugin 'tpope/vim-fugitive'
 call vundle#end()
 filetype plugin indent on
+
+" vim-airline/vim-airline-themes
+let g:airline_powerline_fonts = 1
+let g:airline_theme='wombat'
+
+" let g:airline_theme = 'powerlineish'
+let g:airline#extensions#hunks#enabled=0
+let g:airline#extensions#branch#enabled=1
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
 
 set t_RV=                       " http://bugs.debian.org/608242
 " set runtimepath=$VIMRUNTIME     " turn off user scripts, https://github.com/igrigorik/vimgolf/issues/129
@@ -53,7 +69,7 @@ map <C-n> :NERDTreeToggle<CR>
 
 noremap j jzz
 noremap k kzz
-inoremap js <Esc>
+inoremap jj <Esc>
 
 
 

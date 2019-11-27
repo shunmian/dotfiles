@@ -1,9 +1,17 @@
 set nocompatible                " use vim defaults
+filetype off                     " detect type of file
+" plugin
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'junegunn/fzf'
+call vundle#end()
+filetype plugin indent on
+
 set t_RV=                       " http://bugs.debian.org/608242
 " set runtimepath=$VIMRUNTIME     " turn off user scripts, https://github.com/igrigorik/vimgolf/issues/129
-
 syntax on                       " turn syntax highlighting on by default
-filetype on                     " detect type of file
 filetype indent on              " load indent file for specific file type
 
 set nobackup                    " do not keep a backup file
@@ -41,7 +49,12 @@ highlight SpecialKey ctermfg=240 guifg=#585858
 
 " remap
 :map Y y$
+map <C-n> :NERDTreeToggle<CR>
 
 noremap j jzz
 noremap k kzz
 inoremap js <Esc>
+
+
+
+

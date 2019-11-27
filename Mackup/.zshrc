@@ -29,10 +29,10 @@ alias gpush="git push"
 alias gp='git push origin "$(git_current_branch)"'
 alias go='git open'
 alias gpull="git pull"
-alias gc="git co"
 alias gb="git branch"
 alias gs="git status"
-alias gcb="git co -b"
+alias gf="git fetch"
+alias gc="git co"
 alias gcb="git co -b"
 
 

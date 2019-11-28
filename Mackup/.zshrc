@@ -38,6 +38,8 @@ alias gd="git diff"
 alias grh="git reset --hard"
 alias gcb="git co -b"
 
+alias emp="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+
 if which trash >/dev/null; then
     # echo "trash exists"
 else

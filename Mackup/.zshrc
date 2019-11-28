@@ -38,14 +38,12 @@ alias gd="git diff"
 alias grh="git reset --hard"
 alias gcb="git co -b"
 
-
-#function MCInitVimLocally {
-#  source $MYCONFIG_VIM_INIT
-#j  ls $LOCALCONFIG_VIM
-#  ls $LOCALCONFIG_VIM_BASIC
-#}
-
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if which trash >/dev/null; then
+    # echo "trash exists"
+else
+    echo " trash does not exist"
+    npm install --global trash-cli
+fi
+alias rm=trash
 
 export LSCOLORS=exfxfeaeBxxehehbadacea # colourful ls

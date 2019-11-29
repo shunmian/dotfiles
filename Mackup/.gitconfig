@@ -8,3 +8,5 @@ lg = !"git lg1"
 	name = Johnson
 [credential]
 	helper = store
+[core]
+	pager = less -iXFR

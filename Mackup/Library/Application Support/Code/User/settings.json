@@ -371,7 +371,7 @@
   "editor.minimap.enabled": true,
   "editor.lineNumbers": "relative",
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "java.configuration.checkProjectSettingsExclusions": false,
   "git.ignoreMissingGitWarning": true,
+  "window.openFoldersInNewWindow": "on"
 }

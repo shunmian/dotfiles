@@ -47,5 +47,5 @@ else
     npm install --global trash-cli
 fi
 alias rm=trash
-
+prompt_context() {}
 export LSCOLORS=exfxfeaeBxxehehbadacea # colourful ls

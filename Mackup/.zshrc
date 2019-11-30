@@ -46,6 +46,15 @@ else
     echo " trash does not exist"
     npm install --global trash-cli
 fi
+
+# install spacemacs
+if [ -d "$HOME/.emacs.d" ]; then
+  # echo ".emacs.d exists"
+else
+    echo " .emacs.d does not exist"
+    git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d
+fi
+
 alias rm=trash
 prompt_context() {}
 export LSCOLORS=exfxfeaeBxxehehbadacea # colourful ls

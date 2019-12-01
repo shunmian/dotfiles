@@ -51,6 +51,7 @@ values."
      johnson
      ;; version-control
      clojure
+     neotree
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -129,9 +130,9 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(smyx
+                         spacemacs-dark
                          spacegray
                          apropospriate-dark
-                         spacemacs-dark
                          spacemacs-light)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
@@ -314,8 +315,9 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-  (popwin-mode 1)
-  (setq helm-locate-fuzzy-match t)
+  ;;(setq helm-locate-fuzzy-match t)
+  ;; (with-eval-after-load 'cider
+  ;;  (setq cider-repl-pop-to-buffer-on-connect t))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

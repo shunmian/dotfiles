@@ -3,7 +3,7 @@
 )
 
 (defun johnson/init-youdao-dictionary()
-  (use-package youdao-dictonary)
+ ; (use-package youdao-dictonary)
   :init
-  (spacemacs/set-leader-keys "oy" 'youdao-dictionary-search-at-point+)
+ ; (spacemacs/set-leader-keys "oy" 'youdao-dictionary-search-at-point+)
   )

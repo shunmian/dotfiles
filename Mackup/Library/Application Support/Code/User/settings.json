@@ -380,14 +380,8 @@
       "after": [],
       "commands": [
         {
-          "command": "workbench.action.files.openFile",
+          "command": "workbench.action.quickOpen",
           "args": [],
-          "when": "!isMac"
-        },
-        {
-          "command": "workbench.action.files.openFileFolder",
-          "args": [],
-          "when": "isMac"
         }
       ]
     },
@@ -1159,6 +1153,22 @@
     }
   ],
   "vim.easymotion": true,
+  "search.useGlobalIgnoreFiles": true,
+  "search.location": "panel",
+  "window.zoomLevel": 1,
+  "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
+  "terminal.integrated.fontSize": 11,
+  "eslint.autoFixOnSave": true,
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "Dracula",
+  "workbench.statusBar.visible": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.visible": false,
+  "breadcrumbs.enabled": true,
+  "editor.rulers": [
+    100,
+    120
+  ],
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
   "editor.detectIndentation": false,

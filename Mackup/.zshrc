@@ -38,8 +38,6 @@ alias gd="git diff"
 alias grh="git reset --hard"
 alias gcb="git co -b"
 
-alias emacsp="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
-
 if which trash >/dev/null; then
     # echo "trash exists"
 else
@@ -52,9 +50,12 @@ if [ -d "$HOME/.emacs.d" ]; then
   # echo ".emacs.d exists"
 else
     echo " .emacs.d does not exist"
-    git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d
+    git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
+    # git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d
 fi
 
 alias rm=trash
 prompt_context() {}
 export LSCOLORS=exfxfeaeBxxehehbadacea # colourful ls
+export PATH=/usr/local/bin:$PATH
+export PATH="$HOME/.emacs.d/bin:$PATH"

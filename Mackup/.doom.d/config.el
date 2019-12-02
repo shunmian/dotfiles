@@ -2,6 +2,4 @@
 
 ;; Place your private configuration here
 
-(setq
-  projectile-project-search-path '("~/gini-app")
-)
+(fset 'battery-update #'ignore)

@@ -57,3 +57,7 @@
   )
 
 (setq make-backup-files nil)
+
+
+(add-hook 'prog-mode-hook 'real-auto-save-mode)
+(setq real-auto-save-interval 1) ;; in seconds

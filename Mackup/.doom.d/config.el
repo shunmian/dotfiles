@@ -55,3 +55,5 @@
   "8" 'winum-select-window-8
   "9" 'winum-select-window-9
   )
+
+(setq make-backup-files nil)

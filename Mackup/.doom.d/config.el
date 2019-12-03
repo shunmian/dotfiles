@@ -37,3 +37,4 @@
   )
 (setq display-line-numbers-type 'relative)
 (setq doom-theme 'doom-peacock)
+(add-to-list 'default-frame-alist '(fullscreen . maximized))

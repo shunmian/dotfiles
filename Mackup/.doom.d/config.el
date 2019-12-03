@@ -42,7 +42,7 @@
 (winum-mode)
 
 (map! (:leader
-        (:desc "select dir-tree window" :g "0" #'treemacs-select-window))
+        (:desc "Select dir-tree window" :g "0" #'treemacs-select-window))
 )
 (map! :leader
   "1" 'winum-select-window-1

@@ -35,3 +35,5 @@
   :config
   (org-super-agenda-mode)
   )
+(setq display-line-numbers-type 'relative)
+(setq doom-theme 'doom-peacock)

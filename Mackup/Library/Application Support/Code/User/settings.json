@@ -104,6 +104,24 @@
         }
       ]
     },
+
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "p",
+        "d",
+        "1",
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.openRawDefaultSettings",
+          "args": []
+        }
+      ]
+    },
+
     {
       "before": [
         "<leader>",
@@ -119,6 +137,25 @@
         }
       ]
     },
+
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "p",
+        "d",
+        "2",
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.openDefaultKeybindingsFile",
+          "args": []
+        }
+      ]
+    },
+
+    
 
     {
       "before": [

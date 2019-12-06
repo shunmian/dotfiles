@@ -72,9 +72,23 @@
         "z",
         "z"
       ]
-    }
+    },
   ],
   "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "o",
+        "p",
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.toggleSidebarVisibility",
+          "args": []
+        }
+      ]
+    },
     {
       "before": [
         "<leader>",

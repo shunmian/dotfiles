@@ -5,7 +5,7 @@ lg = !"git lg1"
   co = checkout
 [user]
 	email = shunmian@gmail.com
-	name = Johnson
+	name = shunmian
 [credential]
 	helper = store
 [core]

@@ -30,8 +30,35 @@
     "command": "workbench.action.quickSwitchWindow"
   },
   {
-		"key": "cmd+`",
-		"command": "workbench.action.quickOpenNavigateNext",
-		"when": "inQuickOpen"
-	}
+    "key": "cmd+`",
+    "command": "workbench.action.quickOpenNavigateNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl 0",
+    "command": "workbench.action.focusSideBar"
+  },
+  {
+    "key": "cmd+0",
+    "command": "-workbench.action.focusSideBar"
+  },
+  { // Unbind unconditional default
+    "key": "ctrl+0",
+    "command": "-workbench.action.focusSideBar"
+  },
+  { // Unbind unconditional default
+    "key": "ctrl+0",
+    "command": "-workbench.action.focusSideBar"
+  },
+  { // |←
+    "key": "ctrl+0",
+    "when": "!sideBarFocus",
+    "command": "workbench.action.focusSideBar"
+  },
+  { // |→
+    "key": "ctrl+0",
+    "when": "sideBarFocus",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+
 ]

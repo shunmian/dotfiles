@@ -78,6 +78,21 @@
     {
       "before": [
         "<leader>",
+        "w",
+        "=",
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.evenEditorWidths",
+          "args": []
+        }
+      ]
+    },
+
+    {
+      "before": [
+        "<leader>",
         "o",
         "p",
       ],

@@ -38,7 +38,7 @@ alias gc="git co"
 alias gd="git diff"
 alias grh="git reset --hard"
 alias gcb="git co -b"
-alias gcp="git rev=parse"
+alias gcp="git rev-parse"
 
 if which trash >/dev/null; then
     # echo "trash exists"

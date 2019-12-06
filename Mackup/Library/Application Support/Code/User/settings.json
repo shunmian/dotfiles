@@ -75,7 +75,6 @@
     },
   ],
   "vim.normalModeKeyBindings": [
-
     {
       "before": [
         "<leader>",
@@ -1170,7 +1169,7 @@
   "vim.easymotion": true,
   "search.useGlobalIgnoreFiles": true,
   "search.location": "panel",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
   "terminal.integrated.fontSize": 11,
   "eslint.autoFixOnSave": true,
@@ -1179,7 +1178,6 @@
   "workbench.statusBar.visible": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.activityBar.visible": false,
-  "breadcrumbs.enabled": true,
   "editor.rulers": [
     100,
     120
@@ -1191,10 +1189,10 @@
   "editor.tabSize": 2,
   "editor.fontFamily": "Meslo LG S for Powerline",
   "editor.formatOnSave": true,
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "editor.lineNumbers": "relative",
   "editor.suggestSelection": "first",
   "java.configuration.checkProjectSettingsExclusions": false,
   "git.ignoreMissingGitWarning": true,
-  "window.openFoldersInNewWindow": "on"
+  "window.openFoldersInNewWindow": "on",
 }

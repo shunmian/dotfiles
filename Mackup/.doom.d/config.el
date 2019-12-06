@@ -36,7 +36,9 @@
   (org-super-agenda-mode)
   )
 (setq display-line-numbers-type 'relative)
+
 (setq doom-theme 'doom-peacock)
+
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (winum-mode)
@@ -60,4 +62,5 @@
 
 
 (add-hook 'prog-mode-hook 'real-auto-save-mode)
-(setq real-auto-save-interval 1) ;; in seconds
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
+;;(setq real-auto-save-interval 1) ;; in seconds

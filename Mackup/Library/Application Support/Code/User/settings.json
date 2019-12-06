@@ -89,6 +89,36 @@
         }
       ]
     },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "p",
+        "1",
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.openSettingsJson",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "p",
+        "2",
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.openGlobalKeybindingsFile",
+          "args": []
+        }
+      ]
+    },
 
     {
       "before": [

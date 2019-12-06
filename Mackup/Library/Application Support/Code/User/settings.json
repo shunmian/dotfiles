@@ -161,7 +161,7 @@
       "before": [
         "<leader>",
         "o",
-        "p",
+        "s",
       ],
       "after": [],
       "commands": [
@@ -171,6 +171,38 @@
         }
       ]
     },
+    {
+      "before": [
+        "<leader>",
+        "o",
+        "e",
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.view.extensions",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "o",
+        "p",
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.view.explorer",
+          "args": []
+        }
+      ]
+    },
+    
+
+
+
     {
       "before": [
         "<leader>",

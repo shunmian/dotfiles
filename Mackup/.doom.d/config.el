@@ -83,3 +83,7 @@
 
 (map! (:leader
         (:desc "search buffer project" :g "bfp" #'counsel-git-grep)))
+
+;; buffer meta-x customization
+(map! (:leader
+     (:desc "M-x" :g "SPC" #'counsel-M-x)))

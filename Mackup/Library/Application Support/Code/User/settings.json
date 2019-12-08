@@ -78,6 +78,36 @@
     {
       "before": [
         "<leader>",
+        "b",
+        "f",
+        "1",
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "actions.find",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "f",
+        "p",
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.view.search",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "w",
         "=",
       ],
@@ -199,10 +229,6 @@
         }
       ]
     },
-    
-
-
-
     {
       "before": [
         "<leader>",

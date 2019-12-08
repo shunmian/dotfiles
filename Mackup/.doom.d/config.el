@@ -1,6 +1,10 @@
 ;;; .doom.d/config.el -*- lexical-binding: t; -*-
 
 ;; Place your private configuration here
+(setq load-path
+      (cons "/Users/lal/.doom.d" load-path))
+
+(require 'timestamp "timestamp")
 
 (fset 'battery-update #'ignore)
 (setq explicit-shell-file-name "/bin/zsh")
@@ -20,7 +24,7 @@
   :init
   (setq org-super-agenda-groups '((:name "Today"
                                          :time-grid t
-                                         :scheduled today)
+                                         :scheduled tod)
                                   (:name "Due today"
                                          :deadline today)
                                   (:name "Important"
@@ -63,4 +67,19 @@
 
 (add-hook 'prog-mode-hook 'real-auto-save-mode)
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
-;;(setq real-auto-save-interval 1) ;; in seconds
+(setq real-auto-save-interval 1) ;; in seconds
+(add-hook 'prog-mode-hook 'real-auto-save-mode)
+
+
+;; buffer search customization
+(map! (:leader
+     (:desc "buffer find" :g "bf" nil)))
+
+(map! (:leader
+        (:desc "search buffer line" :g "bf1" #'counsel-grep-or-swiper)))
+
+(map! (:leader
+        (:desc "search buffer snipe" :g "bf2" #'avy-goto-char-2)))
+
+(map! (:leader
+        (:desc "search buffer project" :g "bfp" #'counsel-git-grep)))

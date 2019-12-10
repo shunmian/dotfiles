@@ -1,10 +1,10 @@
 ;;; .doom.d/config.el -*- lexical-binding: t; -*-
 
 ;; Place your private configuration here
-(setq load-path
-      (cons "/Users/lal/.doom.d" load-path))
+;; (setq load-path
+;; (cons "/Users/lal/.doom.d" load-path))
 
-(require 'timestamp "timestamp")
+;; (require 'timestamp "timestamp")
 
 (fset 'battery-update #'ignore)
 (setq explicit-shell-file-name "/bin/zsh")

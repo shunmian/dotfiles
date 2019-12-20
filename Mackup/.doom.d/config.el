@@ -83,3 +83,27 @@
 
 (map! (:leader
         (:desc "search buffer project" :g "bfp" #'counsel-git-grep)))
+
+
+
+;; ein customization
+(map! (:leader
+        (:desc "Jupyter" :g "J" nil)))
+
+(map! (:leader
+        (:desc "run" :g "Jr" #'ein:run)))
+
+(map! (:leader
+        (:desc "login" :g "Jl" #'ein:login)))
+
+(map! (:leader
+        (:desc "open file" :g "Jf" #'ein:connect-to-notebook)))
+
+(map! (:leader
+        (:desc "execute" :g "Je" nil)))
+
+(map! (:leader
+        (:desc "execute cell and go to next" :g "Jec" #'ein:worksheet-execute-cell-and-goto-next)))
+
+(map! (:leader
+        (:desc "execute cell" :g "JeC" #'ein:worksheet-execute-cell)))

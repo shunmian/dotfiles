@@ -16,6 +16,7 @@ alias ls='ls -lGFh'
 function cd {
     builtin cd "$@" && ls -F
 }
+alias sort='du -sh * | sort -r -n | head -30 | tail -10'
 
 # git alias
 if [ -d "$ZSH_CUSTOM/plugins/git-open" ]; then

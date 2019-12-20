@@ -103,7 +103,7 @@
         (:desc "go to next cell" :g "Jn" #'ein:worksheet-goto-next-input)))
 
 (map! (:leader
-        (:desc "go to next cell" :g "Jp" #'ein:worksheet-goto-prev-input)))
+        (:desc "go to prev cell" :g "Jp" #'ein:worksheet-goto-prev-input)))
 
 (map! (:leader
         (:desc "execute" :g "Je" nil)))

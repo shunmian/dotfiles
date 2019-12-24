@@ -54,7 +54,7 @@
   "1" 'winum-select-window-1
   "2" 'winum-select-window-2
   "3" 'winum-select-window-3
-  "4" 'winum-select-window-4
+  "4" 'winum-select-window-4            ;
   "5" 'winum-select-window-5
   "6" 'winum-select-window-6
   "7" 'winum-select-window-7
@@ -113,3 +113,34 @@
 
 (map! (:leader
         (:desc "execute cell" :g "JeC" #'ein:worksheet-execute-cell)))
+
+
+(defun displaymode ()
+  (interactive)
+  (print major-mode)
+  )
+
+(map! (:leader
+        (:desc "mode" :g "M" nil)))
+
+(map! (:leader
+        (:desc "Major mode" :g "Mm" #'displaymode)))
+
+;; enable whitespace minor mode after major mode of emacs-list-mode
+;; (add-hook 'emacs-lisp-mode-hook 'whitespace-mode)
+
+(global-whitespace-mode)
+
+(progn
+ ;; Make whitespace-mode with very basic background coloring for whitespaces.
+  ;; http://ergoemacs.org/emacs/whitespace-mode.html
+  (setq whitespace-style (quote (face spaces tabs newline space-mark tab-mark newline-mark )))
+
+  ;; Make whitespace-mode and whitespace-newline-mode use “¶” for end of line char and “▷” for tab.
+  (setq whitespace-display-mappings
+        ;; all numbers are unicode codepoint in decimal. e.g. (insert-char 182 1)
+        '(
+          (space-mark 32 [183] [46]) ; SPACE 32 「 」, 183 MIDDLE DOT 「·」, 46 FULL STOP 「.」
+          (newline-mark 10 [9166 10]) ; LINE FEED,
+          (tab-mark 9 [9655 9] [92 9]) ; tab
+          )))

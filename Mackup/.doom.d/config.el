@@ -113,3 +113,18 @@
 
 (map! (:leader
         (:desc "execute cell" :g "JeC" #'ein:worksheet-execute-cell)))
+
+;; evil customizatioN
+(evil-define-motion evil-jzz (count)
+  "j to jzz"
+  :type line
+  (evil-next-line (or count 1))
+  (evil-scroll-line-to-center nil))
+(define-key evil-normal-state-map (kbd "j") 'evil-jzz)
+
+(evil-define-motion evil-kzz (count)
+  "j to kzz"
+  :type line
+  (evil-previous-line (or count 1))
+  (evil-scroll-line-to-center nil))
+(define-key evil-normal-state-map (kbd "k") 'evil-kzz)

@@ -130,6 +130,7 @@
 ;; (add-hook 'emacs-lisp-mode-hook 'whitespace-mode)
 
 (global-whitespace-mode)
+;; (menu-bar-mode)
 
 (progn
  ;; Make whitespace-mode with very basic background coloring for whitespaces.
@@ -158,3 +159,13 @@
   (evil-previous-line (or count 1))
   (evil-scroll-line-to-center nil))
 (define-key evil-normal-state-map (kbd "k") 'evil-kzz)
+
+(global-set-key "\C-x\C-n" 'other-window)
+
+(defun other-window-backward (&optional n)
+  "Select the previous window"
+  (interactive "P")
+  (other-window ( - (prefix-numeric-value n) ))
+)
+
+(global-set-key "\C-x\C-p" 'other-window-backward)

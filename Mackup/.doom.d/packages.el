@@ -7,4 +7,4 @@
 ;; (package! builtin-package :disable t)
 (package! org-super-agenda)
 (package! winum)
-(package! real-auto-save)
+(package! helm-ag)

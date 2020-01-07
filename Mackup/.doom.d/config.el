@@ -7,6 +7,7 @@
 ;; (require 'timestamp "timestamp")
 
 (fset 'battery-update #'ignore)
+(fset 'gnus  #'ignore)
 (setq explicit-shell-file-name "/bin/zsh")
 (defun my/term ()
   "My personal term command."
@@ -76,7 +77,7 @@
      (:desc "buffer find" :g "bf" nil)))
 
 (map! (:leader
-        (:desc "search buffer line" :g "bf1" #'counsel-grep-or-swiper)))
+        (:desc "dwim" :g "bff" #'counsel-grep-or-swiper)))
 
 (map! (:leader
         (:desc "search buffer snipe" :g "bf2" #'avy-goto-char-2)))
@@ -169,3 +170,6 @@
 )
 
 (global-set-key "\C-x\C-p" 'other-window-backward)
+
+(defalias 'scroll-ahead 'scroll-up)
+(defalias 'scroll-behind 'scroll-down)

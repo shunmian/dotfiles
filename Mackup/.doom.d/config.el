@@ -46,8 +46,8 @@
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
+;; window key mapping
 (winum-mode)
-
 (map! (:leader
         (:desc "Select dir-tree window" :g "0" #'treemacs-select-window))
 )
@@ -62,6 +62,26 @@
   "8" 'winum-select-window-8
   "9" 'winum-select-window-9
   )
+
+(defun my/alternate-window ()
+  "Switch back and forth between current and last window in the
+current frame."
+  (interactive)
+  (let (;; switch to first window previously shown in this frame
+        (prev-window (get-mru-window nil t t)))
+    ;; Check window was not found successfully
+    (unless prev-window (user-error "Last window not found."))
+    (select-window prev-window)
+    (my/maybe-golden-ratio-adjust)))
+
+(defun my/maybe-golden-ratio-adjust ()
+  "Do golden ratio adjust if it's loaded and enabled."
+  (when (and (boundp 'golden-ratio-mode)
+             (symbol-value golden-ratio-mode))
+    (golden-ratio)))
+
+(map! (:leader
+        (:desc "Jupyter" :g "<tab>" 'my/alternate-window)))
 
 (setq make-backup-files nil)
 
@@ -173,3 +193,4 @@
 
 (defalias 'scroll-ahead 'scroll-up)
 (defalias 'scroll-behind 'scroll-down)
+

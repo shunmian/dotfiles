@@ -194,3 +194,7 @@ current frame."
 (defalias 'scroll-ahead 'scroll-up)
 (defalias 'scroll-behind 'scroll-down)
 
+;; code jump
+
+(map! (:leader
+        (:desc "Jump back" :g "cb" #'dumb-jump-back)))

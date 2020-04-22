@@ -1298,8 +1298,8 @@
   "vim.insertModeKeyBindings": [
     {
       "before": [
-        "f",
-        "d"
+        "j",
+        "k"
       ],
       "after": [
         "<Esc>"
@@ -1308,7 +1308,6 @@
   ],
   "vim.easymotion": true,
   "search.useGlobalIgnoreFiles": true,
-  "search.location": "panel",
   "window.zoomLevel": 0,
   "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
   "terminal.integrated.fontSize": 11,
@@ -1316,7 +1315,7 @@
   "files.autoSave": "afterDelay",
   "workbench.colorTheme": "Dracula",
   "workbench.statusBar.visible": true,
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.activityBar.visible": false,
   "editor.rulers": [
     100,

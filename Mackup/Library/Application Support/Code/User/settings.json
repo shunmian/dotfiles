@@ -1334,4 +1334,5 @@
   "java.configuration.checkProjectSettingsExclusions": false,
   "git.ignoreMissingGitWarning": true,
   "window.openFoldersInNewWindow": "on",
+  "editor.columnSelection": false,
 }

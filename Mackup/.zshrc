@@ -42,6 +42,8 @@ alias grh="git reset --hard"
 alias gcb="git co -b"
 alias gcp="git rev-parse"
 
+alias imgSize="rdjpgcom -verbose"
+
 if which trash >/dev/null; then
     # echo "trash exists"
 else
@@ -64,3 +66,4 @@ export LSCOLORS=exfxfeaeBxxehehbadacea # colourful ls
 export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.emacs.d/bin:$PATH"
 
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles

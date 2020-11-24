@@ -67,3 +67,9 @@ export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.emacs.d/bin:$PATH"
 
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles
+
+# For Linux
+# swap caps and ctrl key
+# setxkbmap -option ctrl:swapcaps
+# alias open
+# alias open='nautilus'

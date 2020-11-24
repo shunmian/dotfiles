@@ -1335,6 +1335,5 @@
   "git.ignoreMissingGitWarning": true,
   "window.openFoldersInNewWindow": "on",
   "editor.columnSelection": false,
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "search.location": "panel"
+  "javascript.updateImportsOnFileMove.enabled": "never"
 }

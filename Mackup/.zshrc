@@ -24,10 +24,12 @@ else
   git clone https://github.com/paulirish/git-open.git $ZSH_CUSTOM/plugins/git-open
 
 fi
+alias glg1="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)    %C(bold yellow)%d%C(reset)' --all"
+alias glg2="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
+alias glg="glg2"
+alias gco="git checkout"
 alias gac="git add . && git commit -m"
 alias gaca="git add . && git commit --amend"
-alias glg="git lg2"
-alias glg2="git lg1"
 alias gpush="git push"
 alias gp='git push origin "$(git_current_branch)"'
 alias go='git open'
@@ -73,3 +75,22 @@ export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottl
 # setxkbmap -option ctrl:swapcaps
 # alias open
 # alias open='nautilus'
+#
+# export PATH="$HOME/anaconda3/bin:$PATH"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/lal/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+   eval "$__conda_setup"
+else
+   if [ -f "/Users/lal/anaconda3/etc/profile.d/conda.sh" ]; then
+      . "/Users/lal/anaconda3/etc/profile.d/conda.sh"
+   else
+       export PATH="/Users/lal/anaconda3/bin:$PATH"
+   fi
+fi
+unset __conda_setup
+conda deactivate
+# <<< conda initialize <<<
+

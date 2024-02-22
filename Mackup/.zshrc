@@ -1,4 +1,6 @@
-source ~/.bash_profile
+
+
+# source ~/.bash_profile
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="agnoster"
@@ -46,21 +48,6 @@ alias gcp="git rev-parse"
 
 alias imgSize="rdjpgcom -verbose"
 
-if which trash >/dev/null; then
-    # echo "trash exists"
-else
-    echo " trash does not exist"
-    npm install --global trash-cli
-fi
-
-# install spacemacs
-if [ -d "$HOME/.emacs.d" ]; then
-  # echo ".emacs.d exists"
-else
-    echo " .emacs.d does not exist"
-    git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
-    # git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d
-fi
 
 alias rm=trash
 prompt_context() {}
@@ -68,29 +55,56 @@ export LSCOLORS=exfxfeaeBxxehehbadacea # colourful ls
 export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.emacs.d/bin:$PATH"
 
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles
-
 # For Linux
 # swap caps and ctrl key
-# setxkbmap -option ctrl:swapcaps
+setxkbmap -option ctrl:swapcaps
 # alias open
-# alias open='nautilus'
+alias open='nautilus'
 #
 # export PATH="$HOME/anaconda3/bin:$PATH"
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+if which trash >/dev/null; then
+    # echo "trash exists"
+else
+    echo " trash does not exist"
+    npm install --global trash-cli
+fi
+
+
+export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node/
+export NVM_IOJS_ORG_MIRROR=http://npm.taobao.org/mirrors/iojs
+
+
+if [ -d "/usr/local/cuda/bin/" ]; then
+
+export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+fi
+
+alias up='unset https_proxy http_proxy all_proxy HTTP_PROXY HTTPS_PROXY ALL_PROXY'
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/lal/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/zwhs/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
-   eval "$__conda_setup"
+    eval "$__conda_setup"
 else
-   if [ -f "/Users/lal/anaconda3/etc/profile.d/conda.sh" ]; then
-      . "/Users/lal/anaconda3/etc/profile.d/conda.sh"
-   else
-       export PATH="/Users/lal/anaconda3/bin:$PATH"
-   fi
+    if [ -f "/home/zwhs/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/zwhs/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/zwhs/miniconda3/bin:$PATH"
+    fi
 fi
 unset __conda_setup
-conda deactivate
 # <<< conda initialize <<<
 
+eval "$(direnv hook zsh)"
+export PATH=$PATH:/nix/var/nix/profiles/default/bin/
+
+alias op="cd ~/Downloads/Clash\ for\ Windows-0.20.39-x64-linux && ./cfw"
+alias zg="cd "/home/zwhs/zwhs/zdetect/global/js/src/defect-system/OCS/raw/DataCenter" && node invoke.js && cd "/home/zwhs/zwhs/zdetect/global/js/src/defect-system/OCS/raw" && node convert.js && cd "/home/zwhs/zwhs/zdetect/global/js/src/defect-system/tools/converter/dfsSeed2dfs" && node invoke.js && cd "/home/zwhs/zwhs/zdetect/global/js/src/defect-system/tools/converter/dfs2processing" && node invoke.js"

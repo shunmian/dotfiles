@@ -1335,5 +1335,6 @@
   "git.ignoreMissingGitWarning": true,
   "window.openFoldersInNewWindow": "on",
   "editor.columnSelection": false,
-  "javascript.updateImportsOnFileMove.enabled": "never"
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "terminal.integrated.defaultProfile.linux": "zsh"
 }

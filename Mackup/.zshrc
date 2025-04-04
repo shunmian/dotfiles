@@ -75,8 +75,8 @@ else
 fi
 
 
-export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node/
-export NVM_IOJS_ORG_MIRROR=http://npm.taobao.org/mirrors/iojs
+export NVM_NODEJS_ORG_MIRROR=http://nodejs.org/dist
+
 
 
 if [ -d "/usr/local/cuda/bin/" ]; then

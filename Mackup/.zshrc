@@ -113,3 +113,8 @@ sleep 1;
 nohup barriers -f --no-tray --debug INFO --name zwhs-MS-7E07 \
   --disable-client-cert-checking --config /tmp/Barrier.DFnsgo \
   --address :24800 >/dev/null 2>&1 &"
+
+# For mackbook sleep, fix barrier stop work
+sudo pmset -a displaysleep 10
+sudo pmset -a sleep 0
+sudo pmset -a disablesleep 1

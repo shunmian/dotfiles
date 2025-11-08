@@ -108,3 +108,8 @@ export PATH=$PATH:/nix/var/nix/profiles/default/bin/
 
 alias op="cd ~/Downloads/Clash\ for\ Windows-0.20.39-x64-linux && ./cfw"
 alias zg="cd "/home/zwhs/zwhs/zdetect/global/js/src/defect-system/OCS/raw/DataCenter" && node invoke.js && cd "/home/zwhs/zwhs/zdetect/global/js/src/defect-system/OCS/raw" && node convert.js && cd "/home/zwhs/zwhs/zdetect/global/js/src/defect-system/tools/converter/dfsSeed2dfs" && node invoke.js && cd "/home/zwhs/zwhs/zdetect/global/js/src/defect-system/tools/converter/dfs2processing" && node invoke.js"
+alias rb="kill -9 $(lsof -t -i :24800) 2>/dev/null; killall -9 barrier barriers 2>/dev/null; 
+sleep 1; 
+nohup barriers -f --no-tray --debug INFO --name zwhs-MS-7E07 \
+  --disable-client-cert-checking --config /tmp/Barrier.DFnsgo \
+  --address :24800 >/dev/null 2>&1 &"
